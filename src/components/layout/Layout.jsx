@@ -5,11 +5,11 @@ import { Grid, GridItem } from "@chakra-ui/react";
 const Layout = () => {
   return (
     <>
-      <Grid templateColumns='repeat(6, 1fr)'>
-        <GridItem>
+      <Grid templateColumns='repeat(6, 1fr)' columnGap={4}>
+        <GridItem colSpan={1}>
           <Sidebar />
         </GridItem>
-        <GridItem>
+        <GridItem colSpan={5}>
           <Outlet />
         </GridItem>
       </Grid>
