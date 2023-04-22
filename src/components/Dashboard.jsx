@@ -2,13 +2,13 @@ import {
   Box,
   Container,
   Heading,
-  Flex,
   Text,
   VStack,
   HStack,
 } from "@chakra-ui/react";
 import CardAndImage from "./otherComp/CardAndImage";
 import CardDivider from "./otherComp/CardDivider";
+import GrayBorder from "./otherComp/GrayBorder";
 
 const Dashboard = () => {
   return (
@@ -29,33 +29,7 @@ const Dashboard = () => {
         {/* CARD SECTION CONTENT */}
         <CardAndImage />
       {/* div with thick borders */}
-      <Flex
-        p={12}
-        border={8}
-        borderColor="gray.100"
-        borderWidth={32}
-        borderStyle="solid"
-        // bg="#ecdccd"
-        borderRadius={8}
-        columnGap={8}
-      >
-        <Box>
-          <Heading size="1rem">Vecron</Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-        <Box>
-          <Heading size="1rem">Vecron</Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-      </Flex>
+        <GrayBorder />
       {/* CARD DIVIDER */}
       <CardDivider />
 

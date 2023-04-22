@@ -5,6 +5,14 @@ import { FaCodiepie, FaBuffer, FaBahai, FaBacon, FaTwitter, FaFacebook, FaWhatsa
 import { NavLink as RouterLink } from "react-router-dom";
 
 export default function Sidebar() {
+  const myhover = {
+      '_hover': {
+        color: "rgb(178, 73, 73)",
+        borderBottom: "0px",
+      }
+  }
+
+
   return (
     <div>
       <Stack bg="#e2e3e4" p={6} minH="100vh">
@@ -16,27 +24,27 @@ export default function Sidebar() {
           <List spacing={4}>
             <ListItem>
               <ListIcon as={FaBuffer} />
-              <Link as={RouterLink} to='/create'>Services</Link>
+              <Link as={RouterLink} to='/create' sx={myhover}>Services</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaCodiepie} />
-              <Link as={RouterLink} to='/create'>Frequent Delivery</Link>
+              <Link as={RouterLink} to='/create' sx={myhover}>Frequent Delivery</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaBacon} />
-              <Link as={RouterLink} to='/create'>Contact</Link>
+              <Link as={RouterLink} to='/create' sx={myhover}>Contact</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaBahai} />
-              <Link as={RouterLink} to='/create'>Markdown</Link>
+              <Link as={RouterLink} to='/create' sx={myhover}>Markdown</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={MdCheckCircle} />
-             <Link as={RouterLink} to='/create'>Create</Link>
+             <Link as={RouterLink} to='/create' sx={myhover}>Create</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={MdSettings} />
-              <Link as={RouterLink} to='/profile'>Profile</Link>
+              <Link as={RouterLink} to='/profile' sx={myhover}>Profile</Link>
             </ListItem>
           </List>
         </Box>
@@ -48,19 +56,19 @@ export default function Sidebar() {
           <List spacing={4}>
             <ListItem>
               <ListIcon as={FaTwitter} />
-              <Link as={RouterLink} to='https://www.twitter.com'>Twitter</Link>
+              <Link as={RouterLink} to='https://www.twitter.com' sx={myhover}>Twitter</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaFacebook} />
-              <Link as={RouterLink} to='https://www.facebook.com'>Facebook</Link>
+              <Link as={RouterLink} to='https://www.facebook.com' sx={myhover}>Facebook</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaWhatsapp} />
-              <Link as={RouterLink} to='/'>Whatsapp</Link>
+              <Link as={RouterLink} to='/' sx={myhover}>Whatsapp</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaLinkedin} />
-              <Link as={RouterLink} to='/'>LinkedIn</Link>
+              <Link as={RouterLink} to='/' sx={myhover}>LinkedIn</Link>
             </ListItem>
           </List>
         </Box>
