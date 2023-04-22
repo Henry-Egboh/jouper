@@ -1,7 +1,8 @@
-import { Box, Heading, Stack } from "@chakra-ui/react";
+import { Box, Heading, Link, Stack } from "@chakra-ui/react";
 import { List, ListItem, ListIcon, UnorderedList } from "@chakra-ui/react";
 import { MdSettings, MdCheckCircle } from "react-icons/md";
 import { FaCodiepie, FaBuffer, FaBahai, FaBacon, FaTwitter, FaFacebook, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { NavLink as RouterLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -15,27 +16,27 @@ export default function Sidebar() {
           <List spacing={4}>
             <ListItem>
               <ListIcon as={FaBuffer} />
-              Services
+              <Link as={RouterLink} to='/create'>Services</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaCodiepie} />
-              Frequent Delivery
+              <Link as={RouterLink} to='/create'>Frequent Delivery</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaBacon} />
-              Contact
+              <Link as={RouterLink} to='/create'>Contact</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaBahai} />
-              Markdown
+              <Link as={RouterLink} to='/create'>Markdown</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={MdCheckCircle} />
-              Create
+             <Link as={RouterLink} to='/create'>Create</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={MdSettings} />
-              Profile
+              <Link as={RouterLink} to='/profile'>Profile</Link>
             </ListItem>
           </List>
         </Box>
@@ -47,19 +48,19 @@ export default function Sidebar() {
           <List spacing={4}>
             <ListItem>
               <ListIcon as={FaTwitter} />
-              Twitter
+              <Link as={RouterLink} to='https://www.twitter.com'>Twitter</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaFacebook} />
-              Facebook
+              <Link as={RouterLink} to='https://www.facebook.com'>Facebook</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaWhatsapp} />
-              Whatsapp
+              <Link as={RouterLink} to='/'>Whatsapp</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={FaLinkedin} />
-              LinkedIn
+              <Link as={RouterLink} to='/'>LinkedIn</Link>
             </ListItem>
           </List>
         </Box>

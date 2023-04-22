@@ -7,6 +7,7 @@ import {
   VStack,
   HStack,
 } from "@chakra-ui/react";
+import CardAndImage from "./otherComp/CardAndImage";
 
 const Dashboard = () => {
   return (
@@ -24,6 +25,8 @@ const Dashboard = () => {
         </Text>
       </Container>
 
+        {/* CARD SECTION CONTENT */}
+        <CardAndImage />
       {/* div with thick borders */}
       <Flex
         p={12}
@@ -92,15 +95,6 @@ const Dashboard = () => {
             Sandwich Studies
           </Heading>
           <Text>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequuntur non laborum dolor culpa nobis doloribus.
-          </Text>
-        </Box>
-        <Box bg="#671134" p={8}>
-          <Heading as="h4" my={2}>
-            Sandwich Studies
-          </Heading>
-          <Text color="#ffc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consequuntur non laborum dolor culpa nobis doloribus.
           </Text>
