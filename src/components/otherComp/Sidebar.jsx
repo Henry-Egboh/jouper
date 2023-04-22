@@ -10,7 +10,7 @@ export default function Sidebar() {
       <Stack bg="#e2e3e4" p={6} minH="100vh">
         {/* useful links */}
         <Box pt={4}>
-          <Heading mb={2} as="h4" fontSize={20} color=" #671134">
+          <Heading mb={2} fontSize={16}>
             Useful Links
           </Heading>
           <List spacing={4}>
@@ -42,7 +42,7 @@ export default function Sidebar() {
         </Box>
         {/* social media handles */}
         <Box py={8}>
-          <Heading mb={2} as="h4" fontSize={20} color=" #671134">
+          <Heading mb={2} fontSize={16}>
             Follow Us:
           </Heading>
           <List spacing={4}>
@@ -66,7 +66,7 @@ export default function Sidebar() {
         </Box>
         {/* Technologies */}
         <Box pb={8}>
-          <Heading mb={2} as="h4" fontSize={20} color=" #671134">
+          <Heading mb={2} fontSize={16}>
             Tech Space
           </Heading>
           <UnorderedList spacing={4} listStyleType="none" ml={0}>
@@ -80,7 +80,7 @@ export default function Sidebar() {
 
         {/* READ more */}
         <Box pb={8}>
-          <Heading mb={2} as="h4" fontSize={20} color=" #671134">
+          <Heading mb={2} fontSize={16}>
             Read Also
           </Heading>
           <UnorderedList spacing={4} listStyleType="none" ml={0}>

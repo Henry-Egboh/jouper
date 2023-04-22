@@ -8,6 +8,7 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import CardAndImage from "./otherComp/CardAndImage";
+import CardDivider from "./otherComp/CardDivider";
 
 const Dashboard = () => {
   return (
@@ -55,6 +56,8 @@ const Dashboard = () => {
           </Text>
         </Box>
       </Flex>
+      {/* CARD DIVIDER */}
+      <CardDivider />
 
       {/* stack boxes */}
       <HStack as="div" spacing={6} py={24}>

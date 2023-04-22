@@ -1,39 +1,45 @@
-import { Card, CardBody, CardFooter, Heading, Text, Image, Stack, Button } from '@chakra-ui/react'
+import {
+  Card,
+  CardBody,
+  Heading,
+  Text,
+  Image,
+  Stack,
+  Button,
+} from "@chakra-ui/react";
 
 const CardAndImage = () => {
-    return ( 
-        <main>
-            <Card
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
+  return (
+    <main>
+      <Card
+        direction={{ base: "column", sm: "row" }}
+        overflow="hidden"
+        variant="outline"
+      >
+        <Image
+          objectFit="cover"
+          maxW={{ base: "100%", }}
+          src="https://picsum.photos/id/4/600/400"
+          alt="study"
+        />
 
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
+        <Stack>
+          <CardBody>
+            <Heading size="md">Growth in Technology</Heading>
 
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
-      </Text>
-    </CardBody>
+            <Text py="2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci molestias velit sapiente debitis tempora doloribus 
+                est dolorum rerum cum corrupti? Iste ipsa amet nostrum.
+            </Text>
+            <Button bg='#671134' color='#ffc' _hover={{ color: "", bg: "#671278", transform: "translate(2)", transition: "all 1s ease-in-out" }}>
+              Read More ...
+            </Button>
+          </CardBody>
+        </Stack>
+      </Card>
+    </main>
+  );
+};
 
-    <CardFooter>
-      <Button variant='solid' colorScheme='blue'>
-        Buy Latte
-      </Button>
-    </CardFooter>
-  </Stack>
-</Card>
-        </main>
-     );
-}
- 
 export default CardAndImage;
