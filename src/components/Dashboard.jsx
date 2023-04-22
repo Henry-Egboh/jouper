@@ -6,14 +6,14 @@ import {
   Text,
   VStack,
   HStack,
-  SimpleGrid,
 } from "@chakra-ui/react";
 
 const Dashboard = () => {
   return (
     <Container maxW="100%">
+      {/* showcase menu */}
       <Container py={32} centerContent>
-        <Heading size='2xl' my="1rem">
+        <Heading size="2xl" my="1rem">
           Dashing Out
         </Heading>
         <Text>
@@ -23,66 +23,28 @@ const Dashboard = () => {
           unde commodi.
         </Text>
       </Container>
-      {/* divs with thick border */}
-      <Flex columnGap={4}>
-        <Box
-          boxShadow="2xl"
-          rounded="md"
-          bg="#ecdccd"
-          p={8}
-          border="16px"
-          borderColor="gray.600"
-          borderWidth={24}
-          borderStyle="groove"
-        >
+
+      {/* div with thick borders */}
+      <Flex
+        p={12}
+        border={8}
+        borderColor="gray.100"
+        borderWidth={32}
+        borderStyle="solid"
+        // bg="#ecdccd"
+        borderRadius={8}
+        columnGap={8}
+      >
+        <Box>
+          <Heading size="1rem">Vecron</Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
             asperiores ipsam eius eveniet.
           </Text>
         </Box>
-        <Box
-          boxShadow="2xl"
-          rounded="md"
-          bg="#ecdccd"
-          p={8}
-          border="16px"
-          borderColor="gray.600"
-          borderWidth={24}
-          borderStyle="groove"
-        >
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-        <Box
-          boxShadow="2xl"
-          rounded="md"
-          bg="#ecdccd"
-          p={8}
-          border="16px"
-          borderColor="gray.600"
-          borderWidth={24}
-          borderStyle="groove"
-        >
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-        <Box
-          boxShadow="2xl"
-          rounded="md"
-          bg="#ecdccd"
-          p={8}
-          border="16px"
-          borderColor="gray.600"
-          borderWidth={24}
-          borderStyle="groove"
-        >
+        <Box>
+          <Heading size="1rem">Vecron</Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
@@ -90,20 +52,9 @@ const Dashboard = () => {
           </Text>
         </Box>
       </Flex>
-      {/* empty div */}
-      <Box
-        p={12}
-        border={8}
-        borderColor="blue"
-        bg="#e12e2e"
-        borderWidth={32}
-        borderStyle="solid"
-        borderRadius={8}
-        my={4}
-      ></Box>
 
       {/* stack boxes */}
-      <HStack as="div" spacing={6} py={8}>
+      <HStack as="div" spacing={6} py={24}>
         <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
