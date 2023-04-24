@@ -1,8 +1,8 @@
-import { Avatar, HStack, Heading, Spacer, Flex, Icon, UnorderedList, ListItem, ListIcon, Link } from "@chakra-ui/react";
+import { Avatar, HStack, Heading, Spacer, Flex, Icon, UnorderedList, ListItem, ListIcon, Link, Stack, Text } from "@chakra-ui/react";
 import mine from "./henry.jpg";
 import { FaCottonBureau } from "react-icons/fa";
 import { NavLink as RouterLink } from "react-router-dom";
-import { MdMediation, MdPermDataSetting, MdUnfoldMore, MdSpaceDashboard } from "react-icons/md";
+import { MdMediation, MdPermDataSetting, MdUnfoldMore, MdSpaceDashboard, MdArrowCircleRight } from "react-icons/md";
 
 const NavBar = () => {
     const myhover = {
@@ -15,6 +15,10 @@ const NavBar = () => {
   
   return (
     <main>
+    <Stack direction='row' p={2} bg='#2e2a25' alignItems='center' justifyContent='center'>
+        <Icon as={MdArrowCircleRight} fill='teal.500' />
+        <Text color='teal.500'>Get caught up while you sleep ...</Text>
+    </Stack>
       <Flex py={2} px={4} alignItems='center'>
         <HStack>
             <Icon as={FaCottonBureau} boxSize='2rem' />
