@@ -88,7 +88,7 @@ const Dashboard = () => {
             Consequuntur non laborum dolor culpa nobis doloribus.
           </Text>
         </Box>
-        <Box bg="teal.100" p={8}>
+        <Box bg="teal.500" p={8}>
           <Heading as="h4" my={2}>
             Sandwich Studies
           </Heading>

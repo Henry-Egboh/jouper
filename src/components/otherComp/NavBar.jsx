@@ -32,7 +32,7 @@ const NavBar = () => {
         <Icon as={MdArrowCircleRight} fill='teal.500' />
         <Text color='teal.500'>Get caught up while you sleep ...</Text>
     </Stack>
-      <Flex className={fixNav ? 'sticky list' : null} py={2} px={4} alignItems='center'>
+      <Flex className={fixNav ? 'sticky' : null} py={2} px={4} alignItems='center'>
         <HStack>
             <Icon as={FaCottonBureau} boxSize='2rem' />
           <Heading fontSize='1.5rem'>

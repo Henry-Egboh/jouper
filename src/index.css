@@ -35,10 +35,28 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 99;
-  /* color: #fcfcfc; */
-}
-
-.list {
-  color: rgb(190, 184, 184);
   color: var(--white);
 }
+
+/* .sticky::after {
+  clear: both;
+  display: block;
+  content: '';
+  margin-bottom: 24px;
+} */
+
+.fixed-side {
+  position: fixed;
+  top: 58px;
+  transition: 1s ease-in-out;
+  z-index: 99;
+}
+
+/* .fixed-side {
+  position: fixed;
+  top: 5.625rem;
+  padding: 2rem;
+  max-height: 48rem;
+  overflow-y: scroll;
+} */
+

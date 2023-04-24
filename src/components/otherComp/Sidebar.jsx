@@ -3,8 +3,21 @@ import { List, ListItem, ListIcon, UnorderedList } from "@chakra-ui/react";
 import { MdSettings, MdCheckCircle } from "react-icons/md";
 import { FaCodiepie, FaBuffer, FaBahai, FaBacon, FaTwitter, FaFacebook, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { NavLink as RouterLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function Sidebar() {
+  const [pos, setPos] = useState(false);
+
+  const sidePositionChange = () => {
+    if (window.scrollY >= 16 && window.scrollY <= 100) {
+          setPos(true);
+    } else {
+      setPos(false);
+    }
+  }
+
+  window.addEventListener('scroll', sidePositionChange);
+
   const myhover = {
       '_hover': {
         color: "rgb(178, 73, 73)",
@@ -15,7 +28,7 @@ export default function Sidebar() {
 
   return (
     <div>
-      <Stack bg="gray.100" p={6} minH="100vh">
+      <Stack bg="gray.100" w='16rem' p={6} className={pos ? 'fixed-side' : null} >
         {/* useful links */}
         <Box pt={4}>
           <Heading mb={2} fontSize={16}>
