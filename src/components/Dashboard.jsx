@@ -17,7 +17,7 @@ const Dashboard = () => {
     <Container maxW="100%">
       {/* showcase menu */}
       <Container py={32} centerContent>
-        <FaBomb fill="teal" color="blue" style={{color: 'red', borderRadius: '50%', border: '4px solid red', padding: '4px'}} size={50} />
+        <FaBomb fill="teal" style={{ borderRadius: '50%', border: '4px solid red', padding: '4px'}} size={50} />
 
         <Heading size="2xl" my="1rem">
           Dashing Out
