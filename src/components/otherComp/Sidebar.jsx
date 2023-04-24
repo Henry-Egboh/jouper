@@ -15,7 +15,7 @@ export default function Sidebar() {
 
   return (
     <div>
-      <Stack bg="#e2e3e4" p={6} minH="100vh">
+      <Stack bg="gray.100" p={6} minH="100vh">
         {/* useful links */}
         <Box pt={4}>
           <Heading mb={2} fontSize={16}>

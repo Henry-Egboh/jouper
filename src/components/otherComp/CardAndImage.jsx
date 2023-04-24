@@ -26,7 +26,6 @@ const CardAndImage = () => {
         <Stack>
           <CardBody>
             <Heading size="md">Growth in Technology</Heading>
-
             <Text py="2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Adipisci molestias velit sapiente debitis tempora doloribus 

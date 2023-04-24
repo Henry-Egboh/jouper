@@ -11,6 +11,11 @@ import {
 } from "@chakra-ui/react";
 
 const CardDivider = () => {
+    const h4 = {
+        color: "teal.500",
+        fontSize: "1rem"
+    }
+
   return (
     <main>
         {/* col 1 */}
@@ -23,7 +28,7 @@ const CardDivider = () => {
           <CardBody>
             <Stack divider={<StackDivider />} spacing="4">
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   Management
                 </Heading>
                 <Text pt="2" fontSize="sm">
@@ -31,7 +36,7 @@ const CardDivider = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   Topical Issues
                 </Heading>
                 <Text pt="2" fontSize="sm">
@@ -39,7 +44,7 @@ const CardDivider = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   Payment Option
                 </Heading>
                 <Text pt="2" fontSize="sm">
@@ -58,7 +63,7 @@ const CardDivider = () => {
           <CardBody>
             <Stack divider={<StackDivider />} spacing="4">
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   Verification
                 </Heading>
                 <Text pt="2" fontSize="sm">
@@ -66,7 +71,7 @@ const CardDivider = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   System Architecture
                 </Heading>
                 <Text pt="2" fontSize="sm">
@@ -74,7 +79,7 @@ const CardDivider = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading size="xs" textTransform="uppercase">
+                <Heading sx={h4} size="xs" textTransform="uppercase">
                   Analysis
                 </Heading>
                 <Text pt="2" fontSize="sm">
