@@ -17,7 +17,6 @@ const myRouter = createBrowserRouter(
       <Route index element={<Dashboard />} />
       <Route path='create' element={<Create />} />
       <Route path='profile' element={<Profile />}/>
-
     </Route>
   )
 )

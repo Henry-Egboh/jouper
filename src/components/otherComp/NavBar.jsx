@@ -3,8 +3,21 @@ import mine from "./henry.jpg";
 import { FaCottonBureau } from "react-icons/fa";
 import { NavLink as RouterLink } from "react-router-dom";
 import { MdMediation, MdPermDataSetting, MdUnfoldMore, MdSpaceDashboard, MdArrowCircleRight } from "react-icons/md";
+import { useState } from "react";
 
 const NavBar = () => {
+    const [fixNav, setFixNav] = useState(false);
+
+    function fixNavBar() {
+        if (window.scrollY >= 16) {
+            setFixNav(true)
+        } else {
+            setFixNav(false);
+        }
+    }
+    window.addEventListener('scroll', fixNavBar);
+
+
     const myhover = {
         fontWeight: 400,
         '_hover': {
@@ -19,7 +32,7 @@ const NavBar = () => {
         <Icon as={MdArrowCircleRight} fill='teal.500' />
         <Text color='teal.500'>Get caught up while you sleep ...</Text>
     </Stack>
-      <Flex py={2} px={4} alignItems='center'>
+      <Flex className={fixNav ? 'sticky list' : null} py={2} px={4} alignItems='center'>
         <HStack>
             <Icon as={FaCottonBureau} boxSize='2rem' />
           <Heading fontSize='1.5rem'>
