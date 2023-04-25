@@ -20,14 +20,12 @@ a {
   transform: translate(0.6);
 }
 
-a:hover {
-  transition: all 500ms ease-in-out;
-}
 
 h2 {
   color: #671134;
 }
 
+/* fix navbar on window scroll to a certain px */
 .sticky {
   background-color: teal;
   transition: 1s ease-in-out;
@@ -36,27 +34,98 @@ h2 {
   width: 100%;
   z-index: 99;
   color: var(--white);
+  fill: #fcfcfc;
 }
-
-/* .sticky::after {
-  clear: both;
-  display: block;
-  content: '';
-  margin-bottom: 24px;
-} */
-
+/* adjust sidebar on window scroll */
 .fixed-side {
   position: fixed;
   top: 58px;
-  transition: 1s ease-in-out;
+  transition: 200ms ease-in-out;
   z-index: 99;
 }
 
-/* .fixed-side {
-  position: fixed;
-  top: 5.625rem;
-  padding: 2rem;
-  max-height: 48rem;
-  overflow-y: scroll;
-} */
+/* showcase icon */
+.show-case-icon {
+  position: relative;
+  animation-name: dropIcon;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  /* animation-delay: 1000ms; */
+}
+
+@keyframes dropIcon {
+  from {
+    top: -860px;
+  }
+
+  to {
+   top: 0px;
+  }
+}
+
+/* showcase heading */
+.show-case-heading {
+  position: relative;
+  animation-name: dropHeading;
+  animation-duration: 1000ms;
+  animation-timing-function:cubic-bezier(0.23, 1, 0.320, 1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in;
+}
+
+@keyframes dropHeading {
+  0% {
+    top: -2000px;
+    right: -2000px;
+  }
+
+  50% {
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    top: 0px;
+    right: 0px;
+    transform: rotateX(60deg);
+  }
+}
+
+/* SHOWCASE TEXT */
+.show-case-text {
+  animation-name: dropText;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes dropText {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+    font-size: 0.4rem;
+  }
+
+  50% {
+    opacity: 0.4;
+    font-size: 0.6rem;
+  }
+
+  75% {
+    opacity: 0.6;
+    font-size: 0.8rem;
+  }
+
+  100% {
+    opacity: 1;
+    font-size: 1rem;
+  }
+}
 

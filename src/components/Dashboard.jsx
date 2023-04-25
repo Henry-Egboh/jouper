@@ -5,6 +5,7 @@ import {
   Text,
   VStack,
   HStack,
+  Wrap,
 } from "@chakra-ui/react";
 import CardAndImage from "./otherComp/CardAndImage";
 import CardDivider from "./otherComp/CardDivider";
@@ -12,63 +13,83 @@ import GrayBorder from "./otherComp/GrayBorder";
 import { FaBomb } from "react-icons/fa";
 
 const Dashboard = () => {
-
   return (
     <Container maxW="100%">
       {/* showcase menu */}
       <Container py={32} centerContent>
-        <FaBomb fill="teal" style={{ borderRadius: '50%', border: '4px solid red', padding: '4px'}} size={50} />
-
-        <Heading size="2xl" my="1rem">
-          Dashing Out
-        </Heading>
-        <Text>
+        <Wrap>
+          <FaBomb
+            className="show-case-icon"
+            fill="teal"
+            style={{
+              borderRadius: "50%",
+              border: "4px solid red",
+              padding: "4px",
+            }}
+            size={50}
+          />
+        </Wrap>
+        <wrap>
+          <Heading className="show-case-heading" size="2xl" my="1rem">
+            Dashing Out
+          </Heading>
+        </wrap>
+        <Wrap>
+        <Text className="show-case-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
           praesentium neque error pariatur enim magnam maxime magni nesciunt
           vel, porro nobis similique temporibus amet, natus veniam dolor officia
           unde commodi.
         </Text>
+        </Wrap>
       </Container>
 
-        {/* CARD SECTION CONTENT */}
-        <CardAndImage />
+      {/* CARD SECTION CONTENT */}
+      <CardAndImage />
       {/* div with thick borders */}
-        <GrayBorder />
+      <GrayBorder />
       {/* CARD DIVIDER */}
       <CardDivider />
 
       {/* stack boxes */}
       <HStack as="div" spacing={6} py={24}>
-        
         <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>Action Tips</Heading>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
             asperiores ipsam eius eveniet.
           </Text>
         </Box>
-        
+
         <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>Action Tips</Heading>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
             asperiores ipsam eius eveniet.
           </Text>
         </Box>
-        
+
         <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>Action Tips</Heading>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
             asperiores ipsam eius eveniet.
           </Text>
         </Box>
-        
+
         <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>Action Tips</Heading>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
           <Text color="#f2f.80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
             consectetur inventore voluptatum unde quibusdam dolores ex
