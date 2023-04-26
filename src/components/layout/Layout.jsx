@@ -13,7 +13,7 @@ const Layout = () => {
         <GridItem as='aside' colSpan={1} hideBelow='md'>
           <Sidebar />
         </GridItem>
-        <GridItem colSpan={5}>
+        <GridItem colSpan={{base: '6', md: '5'}}>
           <Outlet />
         </GridItem>
       </Grid>

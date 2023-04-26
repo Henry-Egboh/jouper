@@ -16,6 +16,7 @@ const CardAndImage = () => {
         direction={{ base: "column", lg: "row" }}
         overflow="hidden"
         variant="outline"
+        ps={{base: '1rem', md: '0rem'}}
       >
         <Image
           objectFit="cover"

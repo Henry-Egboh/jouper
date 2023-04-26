@@ -31,20 +31,18 @@ const h4 = {
 }
 
 const myFooter = {
-    Link: {
       '_hover': {
         color: "rgb(178, 73, 73)",
         borderBottom: "0px",
-      }
     }
 }
 
   return (
     <footer>
-      <Grid sx={myFooter} bg="#2e2a25" pb={8}>
+      <Grid bg="#2e2a25" pb={8}>
         <Grid bg="white" p={8}>
           <Grid
-            templateColumns="repeat(4, 1fr)"
+            templateColumns={{base: "repeat(2, 1fr)", sm: "repeat(3, 1fr)",  md: "repeat(4, 1fr)"}}
             gap={6}
             py={24}
           >
@@ -53,37 +51,37 @@ const myFooter = {
               <List spacing={2}>
                 {/* 1st col */}
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Instant Receiver
                   </Link>
                 </ListItem>
@@ -94,7 +92,7 @@ const myFooter = {
               <Heading pb='0.8rem' sx={h4} fontSize="1rem">Our Policy</Heading>
               <List spacing={2}>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Privacy Policy 
                   </Link>
                 </ListItem>
@@ -104,17 +102,17 @@ const myFooter = {
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Contact Us
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     About Jouper
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     What We Know
                   </Link>
                 </ListItem>
@@ -125,27 +123,27 @@ const myFooter = {
               <Heading pb='0.8rem' sx={h4} fontSize="1rem">Contact Us</Heading>
               <List spacing={2}>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Customer Satisfaction
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Customer Satisfaction
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Customer Satisfaction
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Customer Satisfaction
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link as={RouterLink} to="/">
+                  <Link sx={myFooter} as={RouterLink} to="/">
                     Customer Satisfaction
                   </Link>
                 </ListItem>
