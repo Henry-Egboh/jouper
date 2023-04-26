@@ -1,4 +1,4 @@
 ## Author
 henry-egboh
-# An app 
+# A web app 
 This app was designed using chakra ui for react.
