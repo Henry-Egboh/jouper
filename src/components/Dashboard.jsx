@@ -4,8 +4,8 @@ import {
   Heading,
   Text,
   VStack,
-  HStack,
   Wrap,
+  Grid,
 } from "@chakra-ui/react";
 import CardAndImage from "./otherComp/CardAndImage";
 import CardDivider from "./otherComp/CardDivider";
@@ -52,52 +52,7 @@ const Dashboard = () => {
       <CardDivider />
 
       {/* stack boxes */}
-      <HStack as="div" spacing={6} py={24}>
-        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>
-            Action Tips
-          </Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-
-        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>
-            Action Tips
-          </Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-
-        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>
-            Action Tips
-          </Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-
-        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
-          <Heading mb={2} size={16}>
-            Action Tips
-          </Heading>
-          <Text color="#f2f.80">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            consectetur inventore voluptatum unde quibusdam dolores ex
-            asperiores ipsam eius eveniet.
-          </Text>
-        </Box>
-      </HStack>
-
+      <HCards />
       {/* another stack */}
       <VStack as="div" spacing="1rem" align="stretch" pb={8}>
         <Box bg="gray.100" p={8}>
@@ -122,5 +77,58 @@ const Dashboard = () => {
     </Container>
   );
 };
+
+const HCards = () => {
+  return ( 
+    <>
+      <Grid gap='1rem' templateColumns={{base: '1fr', sm: 'repeat(2, 1fr)', xl: 'repeat(4, 1fr)'}} py={24}>
+        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
+          <Text color="#f2f.80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            consectetur inventore voluptatum unde quibusdam dolores ex
+            asperiores ipsam eius eveniet.
+          </Text>
+        </Box>
+
+        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
+          <Text color="#f2f.80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            consectetur inventore voluptatum unde quibusdam dolores ex
+            asperiores ipsam eius eveniet.
+          </Text>
+        </Box>
+
+        <Box boxShadow="2xl" rounded="md" bg="#fff" p={8}>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
+          <Text color="#f2f.80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            consectetur inventore voluptatum unde quibusdam dolores ex
+            asperiores ipsam eius eveniet.
+          </Text>
+        </Box>
+
+        <Box m='0px' boxShadow="2xl" rounded="md" bg="#fff" p={8}>
+          <Heading mb={2} size={16}>
+            Action Tips
+          </Heading>
+          <Text color="#f2f.80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            consectetur inventore voluptatum unde quibusdam dolores ex
+            asperiores ipsam eius eveniet.
+          </Text>
+        </Box>
+      </Grid>
+    </>
+   );
+}
+ 
 
 export default Dashboard;
