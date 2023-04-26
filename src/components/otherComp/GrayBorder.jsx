@@ -12,7 +12,7 @@ export default function GrayBorder() {
         // bg="#ecdccd"
         borderRadius={8}
         gap={8}
-        wrap={{base: 'wrap', md: 'nowrap' }}
+        wrap={{base: 'wrap', lg: 'nowrap' }}
         
       >
         <Box>

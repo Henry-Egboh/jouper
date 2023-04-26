@@ -18,8 +18,8 @@ const CardDivider = () => {
 
   return (
     <main>
+      <SimpleGrid templateColumns={{base: '1fr', lg: 'repeat(2, 1fr)'}} spacing={4}>
         {/* col 1 */}
-      <SimpleGrid templateColumns='repeat(2, 1fr)' spacing={4}>
         <Card>
           <CardHeader>
             <Heading size="md">Categories</Heading>
