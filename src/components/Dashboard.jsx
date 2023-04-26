@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <Container maxW="100%">
       {/* showcase menu */}
-      <Container py={32} centerContent>
+      <Container py={{base: '4rem', lg: '8rem'}} centerContent>
         <Wrap>
           <FaBomb
             className="show-case-icon"

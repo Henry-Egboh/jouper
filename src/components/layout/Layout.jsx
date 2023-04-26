@@ -9,8 +9,8 @@ const Layout = () => {
     <>
       <Grid>
         <NavBar />
-      <Grid templateColumns='repeat(6, 1fr)' columnGap={4}>
-        <GridItem colSpan={1}>
+      <Grid templateColumns='repeat(6, 1fr)' columnGap={{base: '0rem', lg: '2rem'}}>
+        <GridItem as='aside' colSpan={1} hideBelow='md'>
           <Sidebar />
         </GridItem>
         <GridItem colSpan={5}>

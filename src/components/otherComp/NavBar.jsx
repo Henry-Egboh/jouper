@@ -41,8 +41,8 @@ const NavBar = () => {
         </HStack>
         <Spacer />
         <HStack>
-          <Avatar objectFit="cover" src={mine} boxSize="40px" />
-          <UnorderedList pl='50px' listStyleType='none' display='flex' columnGap='3rem'>
+          <Avatar hideBelow='md' objectFit="cover" src={mine} boxSize="40px" />
+          <UnorderedList pl='50px' listStyleType='none' display='flex' columnGap={{base: '1rem', md: '3rem'}}>
             <ListItem>
                 <ListIcon fill="teal.500" as={MdPermDataSetting} />
                     <Link as={RouterLink} to='/' sx={myhover}>Services</Link>

@@ -96,6 +96,7 @@ h2 {
 
 /* SHOWCASE TEXT */
 .show-case-text {
+  position: relative;
   animation-name: dropText;
   animation-duration: 2000ms;
   animation-timing-function: ease-in-out;

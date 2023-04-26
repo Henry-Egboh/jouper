@@ -11,7 +11,9 @@ export default function GrayBorder() {
         borderStyle="solid"
         // bg="#ecdccd"
         borderRadius={8}
-        columnGap={8}
+        gap={8}
+        wrap={{base: 'wrap', md: 'nowrap' }}
+        
       >
         <Box>
           <Heading size="1rem">Vecron</Heading>
